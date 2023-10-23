@@ -36,11 +36,7 @@ The key components and functionality of this project include:
 
 ## Author
 
-This project is created and maintained by [Your Name].
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
+This project is created and maintained by [Pranav Singh](https://github.com/PranavSingh31)
 
 ## Acknowledgments
 
