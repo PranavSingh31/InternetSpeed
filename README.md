@@ -31,6 +31,7 @@ The key components and functionality of this project include:
 ## Technologies Used
 
 - HTML: The structure of the webpage.
+- CSS: For basic styling of the webpage.
 - JavaScript: For measuring download speeds and performing calculations.
 - Netlify: The project is hosted on Netlify for easy access.
 
