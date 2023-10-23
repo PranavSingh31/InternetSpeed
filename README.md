@@ -38,7 +38,3 @@ The key components and functionality of this project include:
 
 This project is created and maintained by [Pranav Singh](https://github.com/PranavSingh31)
 
-## Acknowledgments
-
-- Thanks to Unsplash for providing random images for testing.
-- Special thanks to the open-source community for various libraries and tools used in this project.
