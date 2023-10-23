@@ -9,7 +9,7 @@ let bitSpeed = document.getElementById("bits"),
 let totalBitSpeed = 0;
 let totalKbSpeed = 0;
 let totalMbSpeed = 0;
-let numTests = 1;
+let numTests = 5;
 let testCompleted = 0;
 
 // Get random image from unsplash.com
@@ -42,16 +42,16 @@ function calculateSpeed() {
 
     testCompleted++;
 
-    // If all tests completed (we get 5 image then calculate average)
+    // If all tests completed (we get 5 images then calculate average)
     if (testCompleted === numTests) {
         let averageSpeedInBps = (totalBitSpeed / numTests).toFixed(2);
         let averageSpeedInKbps = (totalKbSpeed / numTests).toFixed(2);
         let averageSpeedInMbps = (totalMbSpeed / numTests).toFixed(2);
 
         // Display average speeds
-        bitSpeed.innerHTML += `${averageSpeedInBps*100}`;
-        kbSpeed.innerHTML += `${averageSpeedInKbps*100}`;
-        mbSpeed.innerHTML += `${averageSpeedInMbps*100}`;
+        bitSpeed.innerHTML = `Average Bit Speed: ${averageSpeedInBps} bps`;
+        kbSpeed.innerHTML = `Average Kbps Speed: ${averageSpeedInKbps} Kbps`;
+        mbSpeed.innerHTML = `Average Mbps Speed: ${averageSpeedInMbps} Mbps`;
         info.innerHTML = "Test Completed!";
     } else {
         // Run the next test
@@ -67,7 +67,7 @@ const init = async () => {
     image.src = imageApi;
 };
 
-// Run tests when window loads
+// Run tests when the window loads
 window.onload = () => {
     for (let i = 0; i < numTests; i++) {
         init();
